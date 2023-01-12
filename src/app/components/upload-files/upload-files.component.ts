@@ -32,6 +32,7 @@ export class UploadFilesComponent {
       }
       const serializer = new XMLSerializer();
       xmlSemPreco = serializer.serializeToString(doc);
+      console.log("XML: "+xmlSemPreco)
     };
     reader.onloadend = async () => {
       var arquivo: Arquivo = new Arquivo();
